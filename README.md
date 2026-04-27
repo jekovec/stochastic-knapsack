@@ -28,9 +28,9 @@ For each item $i$, create a deterministic item with:
 
 **Step 2: Target Mean Enumeration**
 
-Generate target means $m \in [D/2, |\mathcal{X}_s|]$ as integer powers of $(1+\varepsilon^2)$, where $D = \min_{i \in \mathcal{X}_s} \mu_i$.
+Generate target means m starting from D/2 and growing by factor (1+ε²) until m exceeds the sum of all expected sizes, where D = min μᵢ over all items i.
 
-The sequence is: $m_1 = D/2$, $m_{k+1} = m_k \cdot (1+\varepsilon^2)$
+The sequence is: m₁ = D/2, m_{k+1} = m_k · (1+ε²)
 
 **Step 3: Deterministic Knapsack**
 
